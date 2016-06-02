@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name"
+        android:id="@+id/textView_name"
+        android:layout_marginTop="79dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Surname"
+        android:id="@+id/textView_surname"
+        android:layout_below="@+id/textView_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Age"
+        android:id="@+id/textView_marks"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/textView_surname"
+        android:layout_toLeftOf="@+id/editText_name"
+        android:layout_toStartOf="@+id/editText_name" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_name"
+        android:layout_above="@+id/textView_surname"
+        android:layout_toRightOf="@+id/textView_name"
+        android:layout_toEndOf="@+id/textView_name"
+        android:layout_marginLeft="69dp"
+        android:layout_marginStart="69dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_surname"
+        android:layout_above="@+id/textView_marks"
+        android:layout_alignLeft="@+id/editText_name"
+        android:layout_alignStart="@+id/editText_name" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_marks"
+        android:layout_alignBottom="@+id/textView_marks"
+        android:layout_alignLeft="@+id/editText_surname"
+        android:layout_alignStart="@+id/editText_surname" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/button_add"
+        android:layout_marginTop="110dp"
+        android:layout_below="@+id/textView_marks"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIEW"
+        android:id="@+id/button_viewAll"
+        android:layout_alignTop="@+id/button_add"
+        android:layout_toRightOf="@+id/button_add"
+        android:layout_toEndOf="@+id/button_add" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDIT"
+        android:id="@+id/button_edit"
+        android:layout_alignTop="@+id/button_viewAll"
+        android:layout_toRightOf="@+id/button_viewAll"
+        android:layout_toEndOf="@+id/button_viewAll" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Id"
+        android:id="@+id/textView_id"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView_marks"
+        android:layout_alignRight="@+id/textView_name"
+        android:layout_alignEnd="@+id/textView_name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_id"
+        android:layout_alignBottom="@+id/textView_id"
+        android:layout_alignLeft="@+id/editText_marks"
+        android:layout_alignStart="@+id/editText_marks"
+        android:layout_alignRight="@+id/editText_marks"
+        android:layout_alignEnd="@+id/editText_marks" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:id="@+id/button_delete"
+        android:layout_alignBottom="@+id/button_edit"
+        android:layout_toRightOf="@+id/button_edit"
+        android:layout_toEndOf="@+id/button_edit" />
+
+</RelativeLayout>
